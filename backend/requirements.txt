@@ -1,0 +1,29 @@
+fastapi==0.141.1
+uvicorn[standard]==0.34.0
+sqlalchemy==2.0.52
+alembic==1.14.0
+pydantic==2.13.3
+pydantic-settings==2.7.0
+apscheduler==3.10.4
+yfinance==1.7.0
+pandas==3.0.2
+numpy==2.4.4
+vaderSentiment==3.3.2
+httpx==0.28.1
+requests==2.32.3
+python-dotenv==1.0.1
+passlib==1.7.4
+# Telegram notifications are sent via plain HTTP calls to the Bot API
+# (httpx, already listed above) rather than a dedicated SDK, to keep the
+# notification channel synchronous, simple, and easy to unit test/mock.
+python-multipart==0.0.20
+aiosqlite==0.20.0
+psycopg2-binary==2.9.10
+python-json-logger==2.0.7
+
+# --- testing ---
+pytest==8.3.4
+pytest-asyncio==0.25.0
+pytest-cov==6.0.0
+pytest-env==1.1.5
+freezegun==1.5.1
